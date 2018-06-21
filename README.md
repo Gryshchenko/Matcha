@@ -1,7 +1,7 @@
 # Matcha
 
 ### User SingIn && SingUp
-![User SingIn && SingUp](https://media.giphy.com/media/yxiccIPwLRG2auwFRe/giphy.gif)
+![User auth](https://media.giphy.com/media/yxiccIPwLRG2auwFRe/giphy.gif)
 
 ### Real-time chat webscoket
 ![chat](https://media.giphy.com/media/X7hOTHPSUzyf3hlqRu/giphy.gif)
