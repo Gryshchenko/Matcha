@@ -6,24 +6,23 @@
 3. HTML/CSS materializecss
 
 ### Install
-1. npm i 
+1. locate a build folder on hosts or run localhost:8100 server
 2. run websocket server ./src/php/app/ChatServer php ChatServer.php
-3. run localhost:8100 for php
 
 ### Realization
-1.Registration and Signing-in <br/>
-2.User profile <br/>
+1. Registration and Signing-in <br/>
+2. User profile <br/>
  * The gender <br/>
  * Sexual preferences <br/>
  * A biography <br/>
  * A list of interests with tags <br/>
  * Pictures <br/>
-3.Browsing <br/>
+3. Browsing <br/>
  * The list can be sortable by age, localization, “fame rating” and common tags<br/>
  * The list can be filterable by age, localization, “fame rating” and common tags<br/>
 
-4.Research <br/>
-The user can  run an advanced research selecting one or a few criterias such
+4. Research <br/>
+ * The user can  run an advanced research selecting one or a few criterias such
 as: <br/>
  * A age gap<br/>
  * A “fame rating” gap<br/>
@@ -45,7 +44,7 @@ as: <br/>
  * A connected user “unliked” you<br/>
 
 ### User SingIn && SingUp
-![User auth](http://g.recordit.co/09Vso5agha.gif)
+![User auth](/readme/matcha.singin.gif)
 
 ### Real-time chat webscoket
 ![chat](https://media.giphy.com/media/X7hOTHPSUzyf3hlqRu/giphy.gif)
