@@ -9,6 +9,11 @@
 1. locate a build folder on hosts or run localhost:8100 server
 2. run websocket server ./src/php/app/ChatServer php ChatServer.php
 
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
 ### Realization
 1. Registration and Signing-in <br/>
 2. User profile <br/>
