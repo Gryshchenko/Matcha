@@ -17,6 +17,7 @@ class db {
 
 	public function init($dbConnection)
 	{
+
 		$dbName = "matcha";
 		$dbConnection->query("CREATE DATABASE IF NOT EXISTS $dbName");
 		//$dbConnection->query("use $dbName");

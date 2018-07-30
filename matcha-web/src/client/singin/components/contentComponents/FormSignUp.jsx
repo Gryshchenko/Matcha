@@ -37,7 +37,7 @@ class FormSignUp extends Component  {
     event.preventDefault();
     PostData('auth/signup', this.state).then ((result) => {
       if (result === 'OK') {
-        this.setState({ registrationSuccess : 'Registration successful' });
+        this.setState({ registrationSuccess : 'Registration successful you can login' });
       } else {
         this.setState({ registrationFalse : 'Registration failed' });
       }
