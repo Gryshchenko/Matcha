@@ -43,7 +43,7 @@ class Profile extends Component
     PostData('auth/create_access_token', { username: id.uid, expireTime: 3600 }).then ((result) => {
       localStorage.setItem('accessToken', result);
     })
-    this.conn = new WebSocket('ws://localhost:3001');
+    this.conn = new WebSocket('wss://matcha.vgryshchenko.work/wss2/NNN');
     this.conn.handleLikeSet = this.handleLikeSet.bind(this);
     this.setState({currentUser: id.user_id});
       if (parseInt(id.user_id, 10) === parseInt(this.props.match.params.id, 10))

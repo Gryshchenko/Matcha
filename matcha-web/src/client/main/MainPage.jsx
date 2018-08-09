@@ -42,7 +42,7 @@ class MainPage extends Component {
       } else if (result === 2) {
         this.setState({access: true });
       }
-      this.conn = new WebSocket('ws://localhost:3001');
+      this.conn = new WebSocket('wss://matcha.vgryshchenko.work/wss2/NNN');
       this.conn.onmessage = this.onMessage.bind(this);
       this.setState({mainPreloader: true});
     })

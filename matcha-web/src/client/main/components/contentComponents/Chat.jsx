@@ -25,7 +25,7 @@ class Chat extends Component
     PostData('auth/create_access_token', { username: id.uid, expireTime: 3600 }).then ((result) => {
       localStorage.setItem('accessToken', result);
     })
-    this.conn = new WebSocket('ws://localhost:3001');
+    this.conn = new WebSocket('wss://matcha.vgryshchenko.work/wss2/NNN');
     this.setState({currentUser: id.user_id});
     this.conn.onmessage = this.onMessage.bind(this);
     PostData('likes_views/get_connected', { user_id: id.user_id }).then ((result) => {
