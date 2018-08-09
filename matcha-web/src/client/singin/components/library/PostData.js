@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export function PostData(type, userData) {
-  let BaseUrl = 'http://167.99.33.181/matcha/php/public/index.php/';
+  let BaseUrl = 'http://localhost:8100/public/index.php';
   return new Promise((resolve, reject) => {
     axios.post(BaseUrl + type, userData)
     .then(res => {

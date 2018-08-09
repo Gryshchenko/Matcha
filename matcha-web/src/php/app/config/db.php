@@ -8,7 +8,7 @@ class db {
 	private $DB_PASSWORD = 'qwerty';
 
 	public function connect() {
-		$dbConnection = new \Slim\PDO\database($this->DB_DSN, $this->DB_USER, $this->DB_PASSWORD);
+		$dbConnection = new \Slim\PDO\Database($this->DB_DSN, $this->DB_USER, $this->DB_PASSWORD);
 		$dbConnection->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 		$this->init($dbConnection);
 
