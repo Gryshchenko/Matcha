@@ -5,14 +5,10 @@
 2. Back-end php/slim
 3. HTML/CSS materializecss
 
-### Install
-1. locate a build folder on hosts or run localhost:8100 server
-2. run websocket server ./src/php/app/ChatServer php ChatServer.php
-
-You may serve it with a static server:
-
-  npm install -g serve
-  serve -s build
+#### For testing use:
+1. https://matcha.vgryshchenko.work/
+2. login: login9
+3. pass: qwerty1
 
 ### Realization
 1. Registration and Signing-in <br/>
