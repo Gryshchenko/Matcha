@@ -22,6 +22,7 @@ class FormSignIn extends Component  {
   handleSubmit(event) {
     event.preventDefault();
     PostData('auth/signin', this.state).then ((result) => {
+      console.log(result);
       if (result === false) {
         this.setState({ loginFalse: 'invalid login or password' });
       } else if (result.level.is_authorised === 1) {

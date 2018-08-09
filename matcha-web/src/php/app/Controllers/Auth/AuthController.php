@@ -45,7 +45,7 @@ class AuthController extends Controller
             $_GET['reg_link']
         );
 
-       header("Location: http://localhost:3000");
+       header("Location: https://matcha.vgryshchenko.work/");
        die();
     }
 
@@ -165,7 +165,7 @@ class AuthController extends Controller
         $email = $request->getParam('email');
         $hashed_link = hash("sha256", rand(0, 1000));
 
-        $stm = $db->prepare("INSERT INTO users (login, email, firstname, lastname, password, reg_link, is_authorised) VALUES (?, ?, ?, ?, ?, ?, 1)");
+        $stm = $db->prepare("INSERT INTO users (login, email, firstname, lastname, password, reg_link) VALUES (?, ?, ?, ?, ?, ?)");
         $stm->bindParam(1, $request->getParam('login'));
         $stm->bindParam(2, $request->getParam('email'));
         $stm->bindParam(3, $request->getParam('firstname'));
@@ -174,7 +174,7 @@ class AuthController extends Controller
         $stm->bindParam(6, $hashed_link);
         $stm->execute();
 
-        //$this->SendMail->send_mail($email, "Click on the link to confirm your account: http://localhost:8100/public/auth/confirm?email=" . $email . "&reg_link=" . $hashed_link, "User creation");
+        $this->SendMail->send_mail($email, "Click on the link to confirm your account: https://matcha.vgryshchenko.work/src/php/public/auth/confirm?email=" . $email . "&reg_link=" . $hashed_link, "User creation");
         return (json_encode('OK'));
     }
 }
